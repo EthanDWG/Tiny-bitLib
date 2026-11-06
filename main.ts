@@ -144,7 +144,7 @@ namespace Tinybit {
             let bufff = pins.createBuffer(5);
             bufff[0] = MOTOR;
             bufff[1] = 0; bufff[2] = 0; bufff[3] = 0; bufff[4] = 0;
-            pins.i2cWriteBuffer(PWM_ADD, buf);//停止100ms
+            pins.i2cWriteBuffer(PWM_ADD, bufff);//停止100ms
             basic.pause(100);
             car_flag_old = car_flag_new;
         }
@@ -489,7 +489,7 @@ namespace Tinybit {
             let bufff = pins.createBuffer(5);
             bufff[0] = MOTOR;
             bufff[1] = 0; bufff[2] = 0; bufff[3] = 0; bufff[4] = 0;
-            pins.i2cWriteBuffer(PWM_ADD, buf);//停止100ms
+            pins.i2cWriteBuffer(PWM_ADD, bufff);//停止100ms
             basic.pause(100);
             car_flag_old = car_flag_new;
         }
